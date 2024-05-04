@@ -29,6 +29,7 @@ header {
 }
 .borrar-curso:hover {
     cursor: pointer;
+    color: red;
 }
 ul {
     list-style: none;
