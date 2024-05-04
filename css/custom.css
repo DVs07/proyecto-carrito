@@ -31,6 +31,11 @@ header {
     cursor: pointer;
     color: red;
 }
+.button:hover{
+    background-color: rgba(39, 162, 197, 0.982);
+    border-color: rgba(12, 127, 158, 0.982);
+    color: white;
+}
 ul {
     list-style: none;
 }
