@@ -15,6 +15,16 @@ function cargarEventListener() {
     // Elimina el curso del carrito en el DOM
     carrito.addEventListener('click', eliminarCurso);
 
+    // Vaciar el carrito
+    vaciarCarritoBtn.addEventListener('click', () => {
+        // console.log('Click en vaciar carrito');
+        articulosCarrito = []; // Reseteamos el arreglo.
+
+        limpiarHTML(); // Eliminamos todo el HTML.
+        console.log(articulosCarrito); // Muestra el arreglo vacío.
+    })
+
+
 // Funciones    
 function agregarCurso(e) {  
     e.preventDefault();
