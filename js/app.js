@@ -4,8 +4,8 @@ const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 const listaCursos = document.querySelector('#lista-cursos');
 const buscar = document.querySelector('#busqueda');
+const carritoActivo = document.querySelector('.carrito-icon');
 let articulosCarrito = [];
-
 
 // Eventos
 cargarEventListener();
@@ -23,6 +23,7 @@ function cargarEventListener() {
 
         limpiarHTML(); // Eliminamos todo el HTML.
         console.log(articulosCarrito); // Muestra el arreglo vacío.
+        carritoActivo.classList.remove('activo');
     });
 
     // Buscador
@@ -39,6 +40,7 @@ function agregarCurso(e) {
         const cursoSeleccionado = e.target.parentElement.parentElement; // Acceder al elemento padre de la tarjeta.
         leerDatosCurso(cursoSeleccionado);
         // console.log(info);
+        carritoActivo.classList.add('activo');
     }
 }
 
@@ -56,6 +58,10 @@ function eliminarCurso(e) {
 
         // console.log(articulosCarrito); // Muestra el arreglo actualizado
         carritoHTML(); // Iterar sobre el carrito y mostrar su HTML.
+    }
+
+    if(articulosCarrito.length === 0) {
+        carritoActivo.classList.remove('activo');
     }
 }
 

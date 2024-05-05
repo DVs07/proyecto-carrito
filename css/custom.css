@@ -32,12 +32,20 @@ header {
     color: red;
 }
 .button:hover{
-    background-color: rgba(39, 162, 197, 0.982);
-    border-color: rgba(12, 127, 158, 0.982);
+    /* background-color: #741d51; */
+    background-color: #e44e52;
+    /* background: linear-gradient(to right, #741d51 0%,#e44e52 100%); */
+    border-color: #741d51;
     color: white;
 }
 ul {
     list-style: none;
+}
+.carrito-icon{
+    color: gray;
+}
+.activo{
+    color: rgb(222, 215, 77);
 }
 #hero {
     background-image:url(../img/hero.jpg);
@@ -84,6 +92,7 @@ ul {
 .contenido-hero form #buscador {
     height: 50px;
     margin-bottom: 0;
+    color: gray;
 }
 .contenido-hero form .submit-buscador {
     position: absolute;
