@@ -194,3 +194,16 @@ display: block;
 margin-bottom: 10px;
 text-decoration: none;
 }
+.contador{
+    background-color: red;
+    color: white;
+    border-radius: 60%;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    position: relative;
+    left: -5px;
+    bottom: 16px;
+    font-size: 1.1rem;
+}
